@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Learning jQuery</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/codetester.css">
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="topBar">
+        <div id="titleDiv">
+            <p>CodeTester</p>
+        </div>
+        <div id="buttonsDiv">
+            <ul>
+                <li class="toggle selected" id="HTMLButton">HTML</li><li class="toggle" id="CSSButton">CSS</li><li class="toggle" id="JSButton">JS</li><li class="toggle selected" id="ResultButton">Result</li>
+            </ul>
+        </div>
+        <div id="runDiv">
+            <button id="runButton">Run</button>
+        </div>
+    </div>
+    <div id="containerArea">
+        <div class="codeContainer" id="HTMLContainer">
+            <div class="containerLabel">HTML</div>
+            <textarea id="htmlCode"></textarea>
+        </div>
+        <div class="codeContainer" id="CSSContainer">
+            <div class="containerLabel">CSS</div>
+            <textarea id="cssCode"></textarea>
+        </div>
+        <div class="codeContainer" id="JSContainer">
+            <div class="containerLabel">JS</div>
+            <textarea id="jsCode"></textarea>
+        </div>
+        <div class="codeContainer" id="ResultContainer">
+            <div class="containerLabel">Result</div>
+            <iframe id="resultArea" src="result_window.html"></iframe>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="assets/scripts/codetester.js"></script>
+</body>
+</html>
